@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url("../../assets/fonts/Rubik-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("../../assets/fonts/Rubik-Light.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.greenText {
+  color: #6ceec7;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border: 3px solid #6ceec7;
+}
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/img-bgs/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#home .firstSVG {
+  position: absolute;
+  top: -45px;
+  right: 260px;
+}
+#home .secondSVG {
+  position: absolute;
+  left: -60px;
+  top: 180px;
+}
+#home .thirdSVG {
+  position: absolute;
+  right: -40px;
+  bottom: 50px;
+}
+#home #content {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Rubik-Medium", sans-serif;
+}
+#home #content .logo {
+  margin-bottom: 30px;
+}
+#home #content .welcomeText {
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 73px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#home #content .registrationBtn {
+  width: 214px;
+  height: 56px;
+  border: 2px solid #6ceec7;
+  border-radius: 5px;
+  color: #6ceec7;
+  padding: 16px 50px 17px 50px;
+  background: transparent;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  outline: none;
+}
+#home #content .registrationBtn:hover {
+  background: #6ceec7;
+  color: #000;
+}
+
+#registration {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/img-bgs/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#registration .firstSVG {
+  position: absolute;
+  top: 400px;
+  left: -30px;
+}
+#registration .secondSVG {
+  position: absolute;
+  right: -40px;
+  top: 150px;
+}
+#registration .thirdSVG {
+  position: absolute;
+  right: 320px;
+  bottom: -35px;
+}
+#registration #registrationForm {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#registration #registrationForm .formHeading {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-family: "Rubik-Medium", sans-serif;
+}
+#registration #registrationForm .formField {
+  width: 300px;
+  height: 56px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  font-size: 19px;
+  line-height: 23px;
+  color: #e0e0e0;
+  font-weight: 300;
+  font-family: "Rubik-Light", sans-serif;
+  padding: 11px 18px 11px 50px;
+  position: relative;
+  margin-bottom: 30px;
+  outline: none;
+  transition: all 0.3s linear;
+}
+#registration #registrationForm .formField optgroup {
+  color: #fff;
+}
+#registration #registrationForm .formField option {
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-family: "Rubik-Light", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #5e5e5e;
+}
+#registration #registrationForm .formField:focus {
+  border: 1px solid #6ceec7;
+}
+#registration #registrationForm .formField::placeholder {
+  font-weight: 300;
+  font-family: "Rubik-Light", sans-serif;
+  opacity: 0;
+}
+#registration #registrationForm .formField:-ms-input-placeholder {
+  font-weight: 300;
+  font-family: "Rubik-Light", sans-serif;
+  opacity: 0;
+}
+#registration #registrationForm .formField::-ms-input-placeholder {
+  font-weight: 300;
+  font-family: "Rubik-Light", sans-serif;
+  opacity: 0;
+}
+#registration #registrationForm .row .col-md-6 {
+  height: 56px;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+#registration #registrationForm .row .col-md-6.error {
+  margin-bottom: 40px;
+}
+#registration #registrationForm .row .col-md-6:nth-child(5).error {
+  margin-bottom: 70px;
+}
+#registration #registrationForm .row .col-md-6.success input {
+  border-color: #28a745;
+}
+#registration #registrationForm .row .col-md-6 small {
+  color: #dc3545;
+  position: absolute;
+  top: 60px;
+  width: 300px;
+  text-align: right;
+  font-family: "Rubik-Light", sans-serif;
+  font-weight: 300;
+}
+#registration #registrationForm .row .col-md-6 .form-label {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 65px;
+  transition: 0.5s;
+  font-size: 16px;
+  pointer-events: none;
+  color: #e0e0e0;
+  font-family: "Rubik-Medium", sans-serif;
+  font-weight: 300;
+}
+#registration #registrationForm .row .col-md-6.has-val .form-label {
+  top: 5px;
+  font-size: 11px;
+  color: #6ceec7;
+}
+#registration #registrationForm .row .col-md-6.has-val .formField {
+  padding-bottom: 0;
+}
+#registration #registrationForm .formIcon {
+  position: absolute;
+  top: 16px;
+  left: 31px;
+  color: #6ceec7;
+}
+#registration #registrationForm .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+#registration #registrationForm .custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Rubik-Light", sans-serif;
+}
+#registration #registrationForm .custom-checkbox + label a {
+  color: #6ceec7;
+  margin-left: 5px;
+}
+#registration #registrationForm .custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  transition: all 0.3s linear;
+}
+#registration #registrationForm .custom-checkbox:checked + label::before {
+  border-color: #6ceec7;
+  background-color: #6ceec7;
+  background-image: url("../../assets/icons/check_icon.svg");
+}
+#registration #registrationForm .custom-checkbox:not(:checked) + label:hover::before {
+  border-color: #6ceec7;
+}
+#registration #registrationForm .custom-checkbox:active + label::before {
+  background-color: #6ceec7;
+  border-color: #6ceec7;
+}
+#registration #registrationForm .custom-checkbox:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(108, 238, 199, 0.2);
+}
+#registration #registrationForm .custom-checkbox:focus:not(:checked) + label::before {
+  border-color: #6ceec7;
+}
+#registration #registrationForm .signUpBtn {
+  width: 165px;
+  height: 56px;
+  border: 1px solid #6ceec7;
+  border-radius: 5px;
+  padding: 16px 47px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #6ceec7;
+  transition: all 0.3s linear;
+}
+#registration #registrationForm .signUpBtn:hover {
+  background: #6ceec7;
+  color: #000;
+}
+#registration .logIn {
+  position: absolute;
+  bottom: 40px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #e0e0e0;
+  font-family: "Rubik-Light", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#registration .logIn a {
+  color: #6ceec7;
+}
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+
+[data-scroll=in] {
+  opacity: 1;
+}
+
+[data-scroll=out] {
+  opacity: 0;
+}
+
+@media screen and (max-width: 360px) {
+  #home .firstSVG {
+    width: 124px;
+    height: 124px;
+    top: 10px;
+    left: -42px;
+    right: auto;
+  }
+  #home .secondSVG {
+    width: 110px;
+    height: 110px;
+    right: -40px;
+    top: 130px;
+    left: auto;
+  }
+  #home .thirdSVG {
+    width: 120px;
+    height: 120px;
+    left: -20px;
+    bottom: 40px;
+    right: auto;
+  }
+  #home #content {
+    width: 100%;
+  }
+  #home #content .logo {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  #home #content .welcomeText {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  #home #content .registrationBtn {
+    width: 91.6%;
+    height: 48px;
+    padding: 0;
+    line-height: 48px;
+  }
+
+  #registration {
+    width: 100%;
+    height: fit-content;
+  }
+  #registration .firstSVG {
+    width: 90px;
+    height: 90px;
+    top: 120px;
+    left: -30px;
+    right: auto;
+  }
+  #registration .secondSVG {
+    width: 110px;
+    height: 95px;
+    right: -35px;
+    top: 0px;
+    left: auto;
+  }
+  #registration .thirdSVG {
+    width: 90px;
+    height: 90px;
+    left: auto;
+    bottom: -15px;
+    right: -35px;
+  }
+  #registration #registrationForm {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  #registration #registrationForm .formHeading {
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  #registration #registrationForm .formField {
+    width: 330px;
+  }
+  #registration #registrationForm .signUpBtn {
+    width: 330px;
+    background: #6ceec7;
+    color: #000;
+    font-family: "Rubik-Medium", sans-serif;
+    font-weight: 500;
+  }
+  #registration #registrationForm .row .col-md-6.error small {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

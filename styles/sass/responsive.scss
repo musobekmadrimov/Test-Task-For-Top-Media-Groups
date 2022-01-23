@@ -1,0 +1,114 @@
+@media screen and (max-width: 360px) {
+  // HOME
+
+  #home {
+    .firstSVG {
+      width: 124px;
+      height: 124px;
+      top: 10px;
+      left: -42px;
+      right: auto;
+    }
+
+    .secondSVG {
+      width: 110px;
+      height: 110px;
+      right: -40px;
+      top: 130px;
+      left: auto;
+    }
+
+    .thirdSVG {
+      width: 120px;
+      height: 120px;
+      left: -20px;
+      bottom: 40px;
+      right: auto;
+    }
+
+    #content {
+      width: 100%;
+      .logo {
+        width: 120px;
+        height: 30px;
+        margin-bottom: 20px;
+      }
+
+      .welcomeText {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+      }
+
+      .registrationBtn {
+        width: 91.6%;
+        height: 48px;
+        padding: 0;
+        line-height: 48px;
+      }
+    }
+  }
+
+  #registration {
+    width: 100%;
+    height: fit-content;
+
+    .firstSVG {
+      width: 90px;
+      height: 90px;
+      top: 120px;
+      left: -30px;
+      right: auto;
+    }
+
+    .secondSVG {
+      width: 110px;
+      height: 95px;
+      right: -35px;
+      top: 0px;
+      left: auto;
+    }
+
+    .thirdSVG {
+      width: 90px;
+      height: 90px;
+      left: auto;
+      bottom: -15px;
+      right: -35px;
+    }
+
+    #registrationForm {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 60px;
+
+      .formHeading {
+        margin-top: 100px;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      .formField {
+        width: 330px;
+      }
+
+      .signUpBtn {
+        width: 330px;
+        background: $mainGreen;
+        color: #000;
+        font-family: "Rubik-Medium", sans-serif;
+        font-weight: 500;
+      }
+
+      .row .col-md-6.error {
+        small{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
